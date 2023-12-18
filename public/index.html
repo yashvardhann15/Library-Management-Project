@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DBMS Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Select an Option:</h2>
+        <select id="option">
+            <option selected>Select</option>
+            <option value="1">Show Members Table</option>
+            <option value="2">Show Books Table</option>
+            <option value="3">Show all Transactions</option>
+            <option value="4">Show Fine record</option>
+            <option value="5">Show all Authors</option>
+            <option value="6">Run Query</option>
+        </select>
+    </div>
+    <main id="main">
+        <table id="data-table">
+        </table>
+    </main>
+
+    <!-- javascript -->
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.1.2/dist/axios.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
+
