@@ -5,6 +5,8 @@ import express from 'express';
 import cors from 'cors';
 const app = express();
 
+const PORT = 5000;
+
 app.use(cors())
 app.use(express.static('./public'));
 
@@ -92,6 +94,6 @@ app.post('/runQuery', async(req,res) => {
     res.json(result);
 })
 
-app.listen(process.env.PORT, () => {
+app.listen(PORT, () => {
     console.log("Listening to the port 5000");
 })
